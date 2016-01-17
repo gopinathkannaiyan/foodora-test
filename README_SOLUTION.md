@@ -1,18 +1,19 @@
 # foodora-test-solution
 
-# Folder Structure
+### Folder Structure
 foodora-test
-  README.md
-  DatabaseConfig.php
-  backup-and-update-special-days.php
-  restore-regular-days.php
+  - README.md
+  - DatabaseConfig.php
+  - backup-and-update-special-days.php
+  - restore-regular-days.php
   
   Database related configuration in DatabaseConfig.php
-    [source,php]
+        <p>
   	private static $dbHost = 'localhost' ;
 	private static $dbUsername = 'root';
 	private static $dbUserPassword = 'gopi';
 	private static $dbName = 'foodora-test' ;
+        </p>
 	
   Take backup and update special days - backup-and-update-special-days.php
     [source,php]
