@@ -15,7 +15,7 @@ class RestoreRegularDays
      */
     public function restore()
     {
-        $sql = "TRUNCATE vendor_schedule; INSERT INTO vendor_schedule SELECT * FROM temp; DROP TABLE IF EXISTS `temp`;";
+        $sql = "TRUNCATE table vendor_schedule; INSERT INTO vendor_schedule SELECT * FROM temp; DROP TABLE IF EXISTS `temp`;";
         $sth = $this->pdo->prepare($sql);
         $sth->execute();
     }
